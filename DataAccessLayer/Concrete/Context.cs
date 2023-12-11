@@ -8,7 +8,7 @@ namespace DataAccessLayer.Concrete
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=./AHMET;database=CoreDemoDb;integrated security=true;");
+            optionsBuilder.UseSqlServer("server=AHMET;database=CoreDemoDb;integrated security=true;");
         }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Blog> Blogs { get; set; }
